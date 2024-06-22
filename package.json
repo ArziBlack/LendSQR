@@ -1,0 +1,34 @@
+{
+  "name": "faker",
+  "version": "1.0.0",
+  "description": "perform a basic authentication and generate a random data using @faker-js/faker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "run": "npm run build && node ./dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc -p .",
+    "server": "nodemon server.js"
+  },
+  "author": "Milton Black",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "faker": "^6.6.6",
+    "jsonwebtoken": "^9.0.2",
+    "ng-faker": "^1.3.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "colors": "^1.4.0",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}
