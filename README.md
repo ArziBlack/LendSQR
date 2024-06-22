@@ -15,6 +15,6 @@ This project is a simple Express server that serves randomly generated user data
 To get started, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/your-username/random-data-generator-api.git
+git clone https://github.com/ArziBlack/LendSQR.git random-data-generator-api
 cd random-data-generator-api
 npm install
