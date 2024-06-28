@@ -19,9 +19,9 @@ app.use(cors({
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
-app.use("/lendsqr/v2", routes);
-app.use(json());
 app.use(urlencoded({ extended: true }));
+app.use(json());
+app.use("/lendsqr/v2", routes);
 app.listen(port, () => {
   console.log(colors.rainbow(`Server is running on http://localhost:${port}/lendsqr/v2/api/...`));
 });
