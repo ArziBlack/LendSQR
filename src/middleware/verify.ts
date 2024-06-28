@@ -5,6 +5,7 @@ import { ICredentials } from "../typings/credentials";
 
 const username = process.env.USERNAME as string;
 const password = process.env.PASSWORD as string;
+console.log(username, password);
 
 export const credential: ICredentials = {
   email: username,
