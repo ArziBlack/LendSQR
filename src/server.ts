@@ -1,4 +1,4 @@
-import express, { Application } from "express";
+import express, { Application, json, urlencoded } from "express";
 import cors from "cors";
 import colors from "colors";
 import dotenv from "dotenv";
@@ -20,7 +20,8 @@ app.use(cors({
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
 app.use("/lendsqr/v2", routes);
-app.use(express.json());
+app.use(json());
+app.use(urlencoded({ extended: true }));
 app.listen(port, () => {
   console.log(colors.rainbow(`Server is running on http://localhost:${port}/lendsqr/v2/api/...`));
 });

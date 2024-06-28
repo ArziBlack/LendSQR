@@ -4,7 +4,8 @@ import colors from "colors";
 import { credential } from "../middleware/verify";
 
 export const login = async (req: Request, res: Response): Promise<Response> => {
-  const { email, password } = await req.body;
+  const { email, password } = await req.body || {};
+  console.log(req.body);
 
   if (!email || !password) {
     console.log(colors.red('Email and password are required'));
